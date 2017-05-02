@@ -1,0 +1,385 @@
+.block-960{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 80px;
+    margin-top: 15px;
+}
+
+.body-color {
+    background-color: #fdfcf3;
+}
+.body-color-full{
+    background-color: #c9ecf4;
+    margin-left: -15px;
+}
+.body-color-full-red{
+    background-color: #d3746c;
+    margin-left: -15px;
+}
+
+.link-principales {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.principal {
+    background-color: #d3746c;
+}
+
+.full-width {
+    background-color: #d3746c;
+    padding: 25px;
+    margin: -15px;
+}
+
+.opcBD, .opcArc{
+    font-size: 20px;
+    font-weight: 200;
+    color: #000;
+}
+
+.opcBD .glyphicon-hdd{
+    background-color: #662d91;
+    padding: 12px;
+    height: 47px;
+    margin-left: -12px;
+    color: #ead2ff;
+}
+
+.opcBD {
+    background-color: #7ed9e8;
+    padding: 12px;
+    text-align: right;
+    margin-left: 55%;
+}
+
+.opcArc .glyphicon-upload{
+    background-color: #d27777;
+    padding: 12px;
+    height: 47px;
+    margin-left: -12px;
+    color: #ffdcdc;
+}
+.opcArc .btn-correo{
+    width: 185px;
+}
+
+.opcArc {
+    background-color: #f6f07c;
+    padding: 12px;
+}
+
+.btn-base {
+        margin-top: 30px
+}
+
+.opcArc a, .opcBD a{
+    color: #000;
+}
+
+.tabla {
+    background-color: #74b5a9;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 11px;
+    margin-left: -15px;
+}
+.grafo {
+    width: 100%;
+    height: 655px;
+}
+
+.algoritmo {
+    background-color: #ead2ff;
+    height: 45px;
+    font-size: 22px;
+    width: 70%;
+}
+.algoritmo a{
+    color: #662d91;
+    padding-left: 12px;
+}
+.algoritmo .glyphicon-qrcode{
+    background-color: #662d91;
+    height: 45px;
+    padding: 12px;
+    color: #ead2ff;
+    margin-top: -1px;
+}
+
+.nuevo{
+    background-color: #a2d9ea;
+    height: 47px;
+    font-size: 22px;
+    width: 70%;
+}
+.nuevo a{
+    color: #34586b;
+
+    padding-left: 12px;
+}
+.nuevo .glyphicon-plus{
+    background-color: #34586b;
+    height: 47px;
+    padding: 12px;
+    color: #a2d9ea;
+    margin-top: -1px;
+}
+
+.borrar{
+    background-color: #f29999;
+    height: 47px;
+    font-size: 22px;
+    width: 70%;
+}
+.borrar a{
+    color: #c15f5b;
+    padding-left: 12px;
+}
+.borrar .glyphicon-trash{
+    background-color: #c15f5b;
+    height: 47px;
+    padding: 12px;
+    margin-top: -1px;
+    color: #f29999;
+}
+
+.editar{
+    background-color: #b5e5b5;
+    height: 47px;
+    font-size: 22px;
+    width: 70%;
+}
+.editar a{
+    color: #4f8a88;
+    padding-left: 12px;
+}
+.editar .glyphicon-pencil{
+    background-color: #4f8a88;
+    padding: 12px;
+    height: 47px;
+    margin-top: -1px;
+    color: #b5e5b5;
+}
+
+.cont-actions {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.cont-actions div.row{
+    margin-top: 50px;
+}
+.img-sobre {
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+.reporte{
+    background-color: #19474c;
+    height: 47px;
+    font-size: 22px;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+.reporte .glyphicon-file{
+    background-color: #afd6b5;
+    padding: 12px;
+    height: 47px;
+    margin-top: -1px;
+    color: #19474c;
+}
+
+.imprimir{
+    background-color: #74b5a9;
+    height: 47px;
+    font-size: 22px;
+    margin-top: 5%;
+}
+.imprimir .glyphicon-print{
+    background-color: #662d91;
+    padding: 12px;
+    height: 47px;
+    margin-top: -1px;
+    color: #fff;
+}
+
+.email{
+    background-color: #f6f07c;
+    height: 47px;
+    font-size: 22px;
+    margin-top: 10%;
+    color: #19474c;
+}
+.email .glyphicon-envelope{
+    background-color: #f29999;
+    padding: 12px;
+    height: 47px;
+    margin-top: -1px;
+    color: #fff;
+}
+.cont-algorit {
+    border-top: 2px solid #19474c;
+    width: 80%;
+}
+
+.list-algo {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #19474c;
+    font-size: 14px;
+    font-weight: 500;
+}
+.list-algo a{
+    color: #19474c;
+}
+
+.btn-modal {
+    border: 0px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    width: 75%;
+    padding-left: 0px;
+    padding-top: 12px;
+    margin-top: -8px;
+}
+
+.btn-imprimir {
+    border: 0px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    width: 75%;
+    padding-left: 0px;
+    padding-top: 12px;
+    margin-top: -8px;
+}
+
+.btn-correo {
+    border: 0px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #19474c;
+    width: 75%;
+    padding-left: 0px;
+    padding-top: 12px;
+    margin-top: -8px;
+}
+
+.btn-modal:focus, .btn-modal:active{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+    outline-offset: -5px;
+}
+.btn-correo:focus, .btn-correo:active{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+    outline-offset: -5px;
+    color: #19474c;
+}
+.btn-imprimir:focus, .btn-imprimir:active{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+    outline-offset: -5px;
+}
+
+.btn-modal:hover{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+}
+.btn-correo:hover{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+    color: #19474c;
+}
+.btn-imprimir:hover{
+    background-color: rgba(255, 0, 0, 0);
+    outline: 0px;
+}
+.btn-imprimir:active:focus{
+    background-color: #74b5a9;
+    outline: 0px;
+}
+.btn-correo:active:focus{
+    background-color: #f6f07c;
+    color: #19474c;
+    outline: 0px;
+}
+.btn-modal:active:focus{
+    background-color: #19474c;
+    outline: 0px;
+}
+.half-left {
+    background-color: #f6f07c;
+    min-height: 200px;
+}
+.cargaArchivo span{
+    padding: 15px;
+    background-color: #466e7f;
+    color: #fff;
+}
+.cargaArchivo input{
+    padding: 10px;
+    background-color: #fff;
+}
+.cargaArchivo {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    display: inline-flex;
+}
+.btn-subirArch{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    display: inline-flex;
+}
+.btn-subirArch span{
+    padding: 14px;
+    color: #f9c7c7;
+    background-color: #c15f5b;
+    height: 44px;
+}
+.btn-subirArch button{
+    background-color: #f29999;
+    outline: 0px;
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 1px;
+    height: 44px;
+    color: #c15f5b;
+    width: 150px;
+}
+.algoSolo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #d3746c;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.back {
+    padding-top: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #337ab7;
+}
+.tabla-palabras {
+    
+}
+.tabla-palabras span{
+    display: block;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.frame {
+    width: 100%;
+    height: 65%;
+    margin-top: 10%;
+}
