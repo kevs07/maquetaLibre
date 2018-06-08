@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Libre</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap337/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/vis-network.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+    </head>
+    <body id="target">
+
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
+<script type="text/javascript" src="http://cdn.uriit.ru/jsPDF/libs/adler32cs.js/adler32cs.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js&#10;"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.split_text_to_size.js"></script>
+<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.from_html.js"></script>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="body-color-full-red">
+                        <div class="row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <div class="img-sobre">
+                                    <img src="img/Libre.png" alt="" class="img-responsive">
+                                    <div class="back">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <a href="index.html">Regresar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="grafo" id="grafo">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="reporte">
+                                <span class="glyphicon glyphicon-file" aria-hidden="false"></span>
+                                <button type="button" class="btn btn-primary btn-lg btn-modal" data-toggle="modal" data-target="#modalImprimir">Reporte</button>
+                                <button id="cmd">generate PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="algoSolo">
+                                <span>Algoritmo :D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-algorit">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="list-algo">Origen</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="list-algo">Destino</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" id="modalImprimir">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Reporte General</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="reporte">
+                                    <span class="glyphicon glyphicon-file" aria-hidden="false"></span>
+                                    <button type="button" class="btn btn-primary btn-modal" >Reporte Grafo</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="imprimir">
+                                            <span class="glyphicon glyphicon-print" aria-hidden="false"></span>
+                                            <button type="button" class="btn btn-primary btn-imprimir">Imprimir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="email">
+                                            <span class="glyphicon glyphicon-envelope" aria-hidden="false"></span>
+                                            <button type="button" class="btn btn-primary btn-correo">Enviar por Email</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vis.js"></script>
+        <script type="text/javascript">
+             // se crea el arrglo de los nodos
+              var nodes = new vis.DataSet([
+                {id: 1, label: 'perro'},
+                {id: 2, label: 'gato'},
+                {id: 3, label: 'avión'}
+
+              ]);
+
+              // se define el camino de los nodos
+              var edges = new vis.DataSet([
+                {from: 1, to: 2},
+                {from: 1, to: 3},
+                {from: 2, to: 1},
+                {from: 3, to: 1}
+
+              ]);
+
+              // se crea el grafo
+              var container = document.getElementById('grafo');
+              var data = {
+                nodes: nodes,
+                edges: edges
+              };
+              var options = {};
+              var network = new vis.Network(container, data, options);
+        </script>
+<script type="text/javascript">
+$(function () {
+    var specialElementHandlers = {
+        '#editor': function (element,renderer) {
+            return true;
+        }
+};
+
+$('#cmd').click(function () {
+        var doc = new jsPDF();
+        doc.fromHTML(
+            $('#target').html(), 15, 15, 
+            { 'width': 170, 'elementHandlers': specialElementHandlers }, 
+            function(){ doc.save('reporteGrafo.pdf'); }
+        );
+
+    });  
+});
+</script>
+    </body>
+</html>
